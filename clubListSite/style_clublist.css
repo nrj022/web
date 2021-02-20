@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  margin: 0px;
+  border-bottom: 3px solid gray;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+h2 {
+  margin: 0px;
+  
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+#list {
+  border-right: 3px solid gray;
+  padding: 10px;
+  padding-top: 0px;
+}
+#info {
+  padding: 10px;
+  padding-top: 0px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
