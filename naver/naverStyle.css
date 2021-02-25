@@ -1,0 +1,89 @@
+body {
+  margin: 0px;
+}
+div {
+  display: block;
+}
+li {
+  line-height: 30px;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+/* 제목 */
+.logo_area {
+  display: grid;
+  grid-template-columns: 250px 700px;
+  padding: 0px 30px;
+  width: 1130px;
+  height: 160px;
+  margin: 0px auto;
+}
+.logo_naver {
+  width: 222px;
+  height: 52px;
+  margin-top: 54px;
+}
+.ico_mail {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: top;
+  margin: 3px 9px 0 0;
+}
+
+/* 메뉴바 */
+#special_bg, #gnb {
+  display: block;
+  border-bottom: 1px solid #e4e8eb;
+}
+#gnb {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.gnb_inner {
+  padding: 0 30px;
+}
+.list_nav {
+  margin: 0px;
+}
+.list_nav .nav {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+.list_nav.type_fix {
+  padding-left: 0px;
+}
+.list_nav.type_fix .nav {
+  color: #03c75a;
+}
+.list_nav.type_fix .nav :visited {
+  color: #03c75a;
+}
+.list_nav.NM_FAVORITE_LIST {
+  padding-left: 18px;
+}
+.group_nav {
+  position: relative;
+  padding: 11px 270px 11px 0px;
+  overflow: hidden;
+  width: 860px;
+}
+ul {
+  list-style: none;
+  float: left;
+}
+li {
+  float: left;
+  margin-left: 15px;
+  line-height: 30px;
+}
+@media(min-width: 1200px) {
+  .group_nav {
+    margin: 0 auto;
+  }
+}
