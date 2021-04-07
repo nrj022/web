@@ -1,0 +1,39 @@
+.login {
+  display: block;
+  box-sizing: border-box;
+  border: var(--border);
+  width: 100%;
+  padding: 16px 16px 12px 17px;
+  background-color: var(--background-color);
+  font-size: 12px;
+}
+
+.login span {
+  text-align: left;
+  color: grey;
+  padding-left: 3px;
+}
+
+.login button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 11px;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+
+.login button img {
+  width: 60px;
+  margin: 2px 5px 0 0;
+}
+
+.login-help {
+  justify-content: space-between;
+  margin: 14px 8px 0 4px;
+}

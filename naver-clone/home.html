@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="naver-icon.ico" />
+    <link rel="shortcut icon" href="images/naver-icon.ico" />
     <title>NAVER</title>
   </head>
   <body>
-    <div class="header" role="banner">
+    <div id="header" role="banner">
       <div class="mini-menu">
         <span>네이버를 시작페이지로</span>
         <div class="mini-menu__set-home-btn">
           <i class="fas fa-chevron-right fa-xs"></i>
         </div>
         <span class="mini-menu__bar">|</span>
-        <a href="https://jr.naver.com/">쥬니어네이버</a>
-        <a href="https://happybean.naver.com/">해피빈</a>
+        <a class="mini-menu__juniornaver" href="https://jr.naver.com/"
+          >쥬니어네이버</a
+        >
+        <a class="mini-menu__happybean" href="https://happybean.naver.com/"
+          >해피빈</a
+        >
       </div>
       <div class="logo-and-search">
-        <img src="naver-logo.png" />
+        <img src="images/naver-logo.png" />
         <div class="logo-and-search__search">
           <input type="search" />
           <i class="fas fa-keyboard"></i>
@@ -30,12 +34,12 @@
       </div>
     </div>
     <div class="bar">
-      <div class="menu">
+      <div id="menu">
         <div class="menu-bar">
           <ul class="menu-bar__main">
             <li>
               <a href="#" class="menu-bar__main--mail"
-                ><img src="mail.png" />메일</a
+                ><img src="images/mail.png" />메일</a
               >
             </li>
             <li><a href="#">카페</a></li>
@@ -45,7 +49,7 @@
             <li><a href="#">Pay</a></li>
             <li>
               <a href="#" class="menu-bar__main--tv"
-                ><img class="tv-img" src="naver-tv.png" />TV</a
+                ><img class="tv-img" src="images/naver-tv.png" />TV</a
               >
             </li>
           </ul>
@@ -64,8 +68,336 @@
             >더보기<i class="fas fa-chevron-down"></i
           ></a>
         </div>
+        <div class="menu-bar__weather">
+          <a href="#">
+            <span class="menu-bar__weather--type">미세</span>
+            <i class="fas fa-grin fa-lg"></i>
+            <span class="menu-bar__weather--state">좋음</span>
+            <span class="menu-bar__weather--bar">|</span>
+            <span class="menu-bar__weather--type">초미세</span>
+            <i class="fas fa-grin fa-lg"></i>
+            <span class="menu-bar__weather--state">좋음</span>
+            <span class="menu-bar__weather--region">마두동</span>
+          </a>
+        </div>
       </div>
     </div>
+    <div id="container">
+      <div class="column-left">
+        <img src="images/ad.jpg" class="main-ad" />
+        <div class="news-now">
+          <div class="news-now__issue">
+            <span>연합뉴스</span>
+            <i class="fas fa-chevron-right"></i>
+            <span>실시간 네이버 뉴스 타이틀이 올라옵니다...</span>
+          </div>
+          <div class="news-now__direct">
+            <a href="#">네이버뉴스</a>
+            <span>•</span>
+            <a href="#">연예</a>
+            <a href="#">스포츠</a>
+            <a href="#">경제</a>
+          </div>
+        </div>
+        <div class="news-stand">
+          <div class="news-stand__title">
+            <div class="news-stand__title--direct">
+              <img src="images/news-new.png" width="27px" />
+              <span>뉴스스탠드</span>
+              <i class="fas fa-chevron-right"></i>
+              <span>구독한 언론사</span>
+              <span>•</span>
+              <span>전체언론사</span>
+            </div>
+            <div class="news-stand__title--view">
+              <i class="fas fa-list fa-lg"></i>
+              <i class="fas fa-th-large fa-lg"></i>
+              <i class="fas fa-cog fa-lg"></i>
+            </div>
+          </div>
+          <div class="news-stand__agency">
+            <table>
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/011.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/up/2020/0708/nsd94830278.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/214.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/327.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/020.png"
+                  /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/076.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/993.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/094.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/802.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/955.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/938.png"
+                  /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/815.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/910.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/529.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/up/2020/1011/nsd205146413.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/989.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/396.png"
+                  /></a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/364.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/911.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/up/2021/0222/nsd13325188.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/966.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/075.png"
+                  /></a>
+                </td>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/979.png"
+                  /></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="column-right">
+        <div class="login">
+          <span>네이버를 더 안전하고 편리하게 이용하세요</span>
+          <button><img src="images/naver-small.png" />로그인</button>
+          <div class="login-help">
+            <div class="login-help__find">
+              <i class="fas fa-lock"></i>
+              <a href="#"><span>아이디</span></a>
+              <span>•</span>
+              <a href="#"><span>비밀번호찾기</span></a>
+            </div>
+            <div class="login-help__join">
+              <i class="fas fa-user"></i>
+              <a href="#"><span>회원가입</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="world-info">
+          <div class="world-info__issue">
+            <span>이슈</span>
+            <span>코로나바이러스감염증19 현황</span>
+          </div>
+          <div class="world-info__btn">
+            <button><i class="fas fa-chevron-left"></i></button>
+            <button><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="live-ad">
+          <img
+            src="https://ssl.pstatic.net/tveta/libs/1332/1332001/aa2bf29a2f50bd575783_20210329115147070_2.jpg"
+          />
+        </div>
+        <div class="trend-shopping">
+          <div class="trend-shopping__title">
+            <div class="trend-shopping__title--link">
+              <img src="images/naver-mini-logo.png" />
+              <span>트렌드쇼핑</span>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="trend-shopping__title--tab">
+              <span>상품</span>
+              <span>쇼핑몰</span>
+              <span>MEN</span>
+            </div>
+            <div class="trend-shopping__content">
+              <div class="shop__title--name">
+                <a href="#"
+                  ><img
+                    src="https://shopping-phinf.pstatic.net/20200828_27/b05c0494-c5ed-43af-8dfd-0ec256510710.jpg"
+                  />
+                </a>
+              </div>
+              <div class="shop__title--btn">
+                <span>1 / 13</span>
+                <button><i class="fas fa-chevron-left"></i></button>
+                <button><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <div class="shop__goods">
+                <ul>
+                  <li class="goods-items type-big">
+                    <a href="#">
+                      <img
+                        src="https://s.pstatic.net/shopping.phinf/20210330_29/7aa0aed5-f0b7-447b-8f36-4ce69d1f35df.jpg"
+                      />
+                      <h6>귀엽다고 보다가 밤 샜어</h6>
+                      <p>분양 받을 사람 모여라 ~</p>
+                    </a>
+                  </li>
+                  <li class="goods-items type-big">
+                    <a href="#">
+                      <img
+                        src="https://s.pstatic.net/shopping.phinf/20210405_26/2132cc7f-e3da-40c4-8788-73d6f68e4f47.jpg"
+                      />
+                      <h6>지친 오늘 위로가 되는</h6>
+                      <p>따뜻한 네온사인 조명</p>
+                    </a>
+                  </li>
+                  <li class="goods-items">
+                    <a href="#">
+                      <img
+                        src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
+                      />
+                      <h6>드라마에 나올법!</h6>
+                      <p>나도 할 수 있다?</p>
+                    </a>
+                  </li>
+                  <li class="goods-items">
+                    <a href="#">
+                      <img
+                        src="https://s.pstatic.net/shopping.phinf/20210401_15/63153f32-adb2-4f07-8a76-16de6bcc23ee.jpg"
+                      />
+                      <h6>선물 하려다가</h6>
+                      <p>내것도 하나 샀어</p>
+                    </a>
+                  </li>
+                  <li class="goods-items">
+                    <a href="#">
+                      <img
+                        src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
+                      />
+                      <h6>현관문 열면</h6>
+                      <p>이런 장관이?</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-btn">
+      <div class="darkmode-btn">
+        <i class="fas fa-moon"></i>
+        <span>다크 모드로 보기</span>
+      </div>
+      <div class="top-btn">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/041bfb30d2.js"
       crossorigin="anonymous"

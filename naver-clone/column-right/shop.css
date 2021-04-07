@@ -1,0 +1,6 @@
+.world-info {
+  margin: 12px 0;
+  border: var(--border);
+  letter-spacing: -0.25px;
+  padding: 15px 0 14px 16px;
+}

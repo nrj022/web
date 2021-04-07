@@ -1,0 +1,107 @@
+@media (max-width: 1190px) {
+  .bar {
+    width: 1190px;
+  }
+}
+
+.bar {
+  display: block;
+  border-top: 1px solid #e4e8eb;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 12%);
+}
+
+#menu {
+  height: 50px;
+  position: relative;
+}
+
+.menu-bar {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  padding: 11px 270px 11px 0;
+}
+
+.menu-bar__main {
+  color: var(--green);
+}
+
+.menu-bar__main--mail img {
+  width: 20px;
+  height: 20px;
+  margin: 3px 9px 0 0;
+  vertical-align: top;
+}
+
+.menu-bar__main--tv img {
+  width: 12px;
+  height: 14px;
+  margin: 9px 2px 0 0;
+  vertical-align: top;
+}
+
+.menu-bar__main li,
+.menu-bar__sub li {
+  margin-left: 15px;
+  line-height: 30px;
+}
+
+.menu-bar__main li:first-child,
+.menu-bar__sub li:first-child {
+  margin-left: 0px;
+}
+
+.menu-bar__sub {
+  margin-left: 18px;
+}
+
+.menu__more {
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 32px;
+}
+
+.menu__more a:hover {
+  text-decoration: underline;
+}
+
+.menu__more i {
+  margin-left: 7px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-bar__weather {
+  width: 270px;
+  height: 52px;
+  position: absolute;
+  right: 30px;
+  font-size: 12px;
+}
+
+.menu-bar__weather--type {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-bar__weather i {
+  color: #32a1ff;
+  margin: 0px 3px;
+}
+
+.menu-bar__weather--state,
+.menu-bar__weather--bar {
+  font-weight: 700;
+}
+
+.menu-bar__weather--bar {
+  color: rgba(0, 0, 0, 0.1);
+  margin: 0px 8px;
+}
+
+.menu-bar__weather--region {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
+}
+
+.menu-bar__weather a:hover {
+  text-decoration: underline;
+}

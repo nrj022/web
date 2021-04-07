@@ -1,6 +1,11 @@
 @import "reset.css";
 @import "variables.css";
+
 @import "header.css";
+@import "menu.css";
+@import "column-left/news.css";
+@import "column-right/login.css";
+@import "column-right/shop.css";
 
 body {
   color: #202020;
@@ -15,78 +20,63 @@ li {
   align-items: center;
 }
 
-@media (max-width: 1190px) {
-  .bar {
-    width: 1190px;
-  }
-}
-
-.bar {
-  display: block;
-  border-top: 1px solid #e4e8eb;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 12%);
-}
-
-.menu {
-  display: flex;
+#header,
+#menu,
+#container {
   justify-content: flex-start;
   width: 1130px;
-  height: 50px;
   padding: 0px 30px;
   margin: 0px auto;
 }
 
-.menu-bar {
-  font-size: 15px;
+#container {
+  padding: 20px 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  letter-spacing: -0.2px;
+}
+
+.darkmode-btn i {
+  margin-right: 5px;
+}
+
+.fixed-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 30px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: -0.5px;
+}
+
+.darkmode-btn,
+.top-btn {
+  height: 44px;
+  border-radius: 22px;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.darkmode-btn {
+  margin-right: 8px;
+  width: 136px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: -0.3px;
-  padding: 11px 270px 11px 0;
 }
 
-.menu-bar__main {
-  color: var(--green);
+.top-btn {
+  width: 44px;
 }
 
-.menu-bar__main--mail img {
-  width: 20px;
-  height: 20px;
-  margin: 3px 9px 0 0;
-  vertical-align: top;
+.column-right,
+.column-left {
+  flex-direction: column;
 }
 
-.menu-bar__main--tv img {
-  width: 12px;
-  height: 14px;
-  margin: 9px 2px 0 0;
-  vertical-align: top;
+.column-left {
+  width: 750px;
 }
 
-.menu-bar__main li,
-.menu-bar__sub li {
-  margin-left: 15px;
-  line-height: 30px;
-}
-
-.menu-bar__main li:first-child,
-.menu-bar__sub li:first-child {
-  margin-left: 0px;
-}
-
-.menu-bar__sub {
-  margin-left: 18px;
-}
-
-.menu__more {
-  font-weight: 500;
-  font-size: 13px;
-  margin-left: 32px;
-}
-
-.menu__more a:hover {
-  text-decoration: underline;
-}
-
-.menu__more i {
-  margin-left: 7px;
-  color: rgba(0, 0, 0, 0.5);
+.column-right {
+  width: 350px;
+  justify-content: flex-start;
 }

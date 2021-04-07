@@ -1,0 +1,51 @@
+.main-ad {
+  width: 750px;
+  height: 135px;
+}
+
+.news-now {
+  justify-content: space-between;
+  width: 718px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-top: 12px;
+  padding: 12px 15px 11px 15px;
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+.news-stand {
+  flex-direction: column;
+}
+
+.news-stand__title {
+  width: 100%;
+  justify-content: space-between;
+  padding: 22px 0 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.news-stand__title img {
+  margin: -6px 1px 0 0;
+}
+
+.news-stand__title i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.news-stand__agency td {
+  border: var(--border);
+}
+
+.news-stand__agency td {
+  text-align: center;
+  vertical-align: middle;
+  width: 125px;
+  height: 65px;
+}
+
+.news-stand__agency td img {
+  height: 20px;
+}
