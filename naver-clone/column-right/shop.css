@@ -1,6 +1,30 @@
-.world-info {
-  margin: 12px 0;
-  border: var(--border);
+.trend-shopping,
+.trend-shopping__content,
+.trend-shopping__content ul {
+  flex-direction: column;
   letter-spacing: -0.25px;
-  padding: 15px 0 14px 16px;
+  text-align: center;
+}
+
+.trend-shopping__title,
+.shop__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-items img {
+  width: 107px;
+}
+
+.type-big img {
+  width: 125px;
+}
+
+.goods-items h6,
+.goods-items span {
+  font-size: 12px;
+}
+
+.goods-items h6 {
+  font-weight: 700;
 }

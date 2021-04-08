@@ -295,12 +295,12 @@
         </div>
         <div class="world-info">
           <div class="world-info__issue">
-            <span>이슈</span>
+            <span class="world-info__issue--title">이슈</span>
             <span>코로나바이러스감염증19 현황</span>
           </div>
           <div class="world-info__btn">
-            <button><i class="fas fa-chevron-left"></i></button>
-            <button><i class="fas fa-chevron-right"></i></button>
+            <button><i class="fas fa-chevron-left fa-sm"></i></button>
+            <button><i class="fas fa-chevron-right fa-sm"></i></button>
           </div>
         </div>
         <div class="live-ad">
@@ -309,9 +309,9 @@
           />
         </div>
         <div class="trend-shopping">
-          <div class="trend-shopping__title">
+          <header class="trend-shopping__title">
             <div class="trend-shopping__title--link">
-              <img src="images/naver-mini-logo.png" />
+              <img src="images/naver-mini-logo.png" width="15px" />
               <span>트렌드쇼핑</span>
               <i class="fas fa-chevron-right"></i>
             </div>
@@ -320,11 +320,14 @@
               <span>쇼핑몰</span>
               <span>MEN</span>
             </div>
-            <div class="trend-shopping__content">
+          </header>
+          <div class="trend-shopping__content">
+            <header class="shop__title">
               <div class="shop__title--name">
                 <a href="#"
                   ><img
                     src="https://shopping-phinf.pstatic.net/20200828_27/b05c0494-c5ed-43af-8dfd-0ec256510710.jpg"
+                    width="80px"
                   />
                 </a>
               </div>
@@ -333,55 +336,55 @@
                 <button><i class="fas fa-chevron-left"></i></button>
                 <button><i class="fas fa-chevron-right"></i></button>
               </div>
-              <div class="shop__goods">
-                <ul>
-                  <li class="goods-items type-big">
-                    <a href="#">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20210330_29/7aa0aed5-f0b7-447b-8f36-4ce69d1f35df.jpg"
-                      />
-                      <h6>귀엽다고 보다가 밤 샜어</h6>
-                      <p>분양 받을 사람 모여라 ~</p>
-                    </a>
-                  </li>
-                  <li class="goods-items type-big">
-                    <a href="#">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20210405_26/2132cc7f-e3da-40c4-8788-73d6f68e4f47.jpg"
-                      />
-                      <h6>지친 오늘 위로가 되는</h6>
-                      <p>따뜻한 네온사인 조명</p>
-                    </a>
-                  </li>
-                  <li class="goods-items">
-                    <a href="#">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
-                      />
-                      <h6>드라마에 나올법!</h6>
-                      <p>나도 할 수 있다?</p>
-                    </a>
-                  </li>
-                  <li class="goods-items">
-                    <a href="#">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20210401_15/63153f32-adb2-4f07-8a76-16de6bcc23ee.jpg"
-                      />
-                      <h6>선물 하려다가</h6>
-                      <p>내것도 하나 샀어</p>
-                    </a>
-                  </li>
-                  <li class="goods-items">
-                    <a href="#">
-                      <img
-                        src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
-                      />
-                      <h6>현관문 열면</h6>
-                      <p>이런 장관이?</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            </header>
+            <div class="shop__goods">
+              <ul>
+                <li class="goods-items type-big">
+                  <a href="#">
+                    <img
+                      src="https://s.pstatic.net/shopping.phinf/20210330_29/7aa0aed5-f0b7-447b-8f36-4ce69d1f35df.jpg"
+                    />
+                    <h6>귀엽다고 보다가 밤 샜어</h6>
+                    <span>분양 받을 사람 모여라 ~</span>
+                  </a>
+                </li>
+                <li class="goods-items type-big">
+                  <a href="#">
+                    <img
+                      src="https://s.pstatic.net/shopping.phinf/20210405_26/2132cc7f-e3da-40c4-8788-73d6f68e4f47.jpg"
+                    />
+                    <h6>지친 오늘 위로가 되는</h6>
+                    <span>따뜻한 네온사인 조명</span>
+                  </a>
+                </li>
+                <li class="goods-items">
+                  <a href="#">
+                    <img
+                      src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
+                    />
+                    <h6>드라마에 나올법!</h6>
+                    <span>나도 할 수 있다?</span>
+                  </a>
+                </li>
+                <li class="goods-items">
+                  <a href="#">
+                    <img
+                      src="https://s.pstatic.net/shopping.phinf/20210401_15/63153f32-adb2-4f07-8a76-16de6bcc23ee.jpg"
+                    />
+                    <h6>선물 하려다가</h6>
+                    <span>내것도 하나 샀어</span>
+                  </a>
+                </li>
+                <li class="goods-items">
+                  <a href="#">
+                    <img
+                      src="https://s.pstatic.net/shopping.phinf/20210111_0/8e47ed5a-6670-4b42-8ed4-f4f66779d712.jpg"
+                    />
+                    <h6>현관문 열면</h6>
+                    <span>이런 장관이?</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -393,7 +396,7 @@
         <i class="fas fa-moon"></i>
         <span>다크 모드로 보기</span>
       </div>
-      <div class="top-btn">
+      <div class="top-btn" onclick="javascript:window.scrollTo(0, 0)">
         <i class="fas fa-arrow-up"></i>
       </div>
     </div>

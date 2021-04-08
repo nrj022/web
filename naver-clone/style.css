@@ -4,7 +4,7 @@
 @import "header.css";
 @import "menu.css";
 @import "column-left/news.css";
-@import "column-right/login.css";
+@import "column-right/login+issue.css";
 @import "column-right/shop.css";
 
 body {
@@ -44,7 +44,7 @@ li {
   position: fixed;
   right: 28px;
   bottom: 30px;
-  background-color: white;
+  background-color: transparent;
   color: rgba(0, 0, 0, 0.7);
   letter-spacing: -0.5px;
 }
@@ -53,6 +53,7 @@ li {
 .top-btn {
   height: 44px;
   border-radius: 22px;
+  background-color: white;
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,4 +80,9 @@ li {
 .column-right {
   width: 350px;
   justify-content: flex-start;
+}
+
+.live-ad img {
+  width: 100%;
+  border: var(--border);
 }
