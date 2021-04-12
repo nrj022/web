@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  height: 120px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.header i {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+.header-sub {
+  height: 80px;
+}
+.header .title {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.title-sub {
+  position: absolute;
+  left: 50px;
+}
+
+.title-sub span {
+  font-size: 30px;
+}

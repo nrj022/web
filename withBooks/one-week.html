@@ -7,29 +7,31 @@
     <link rel="shortcut icon" href="sources/alphabet-B.png" />
     <link rel="stylesheet" href="style.css" />
     <title>WITH BOOKS</title>
+    <style>
+      .week-new img,
+      .week-ongoing img {
+        flex: 1;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div class="header">
+    <div class="header header-sub">
       <i class="fas fa-bars fa-lg"></i>
-      <header class="title">
+      <header class="title title-sub">
         <a href="home.html"><span>With Books</span></a>
       </header>
     </div>
-    <div class="challenges">
-      <div class="one-week">
-        <a href="one-week.html">
-          <img src="sources/bridge.jpg" />
-        </a>
+    <div class="one-week-challenges">
+      <div class="week-new">
+        <img src="sources/turtle.jpg" alt="" />
+        <h2>새로운 챌린지 <span>바다 거북</span> 시작까지</h2>
+        <span>3days 13hours 23seconds</span>
       </div>
-      <div class="fifteen-days">
-        <a href="one-week.html">
-          <img src="sources/road.jpg" />
-        </a>
-      </div>
-      <div class="one-month">
-        <a href="one-week.html">
-          <img src="sources/buildings.jpg" />
-        </a>
+      <div class="week-ongoing">
+        <img src="sources/beach.jpg" alt="" />
+        <h2>진행중인 챌린지 DAY + 3</h2>
+        <a href="#">바로가기</a>
       </div>
     </div>
     <script
