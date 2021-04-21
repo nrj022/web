@@ -4,7 +4,8 @@
 body {
   font-family: "Playfair Display", serif;
 }
-div {
+div,
+section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +15,10 @@ div {
     width: 1000px;
   }
 }
-.challenges {
+section {
   width: 100%;
 }
-.challenges div {
+article {
   flex: 1;
 }
 .challenges img {

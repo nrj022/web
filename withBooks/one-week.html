@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="style.css" />
     <title>WITH BOOKS</title>
     <style>
-      .week-new img,
-      .week-ongoing img {
-        flex: 1;
+      .one-week-challenges {
         width: 100%;
+      }
+      .week-new,
+      .week-ongoing {
+        flex: 1;
+        position: relative;
+      }
+      .one-week-challenges img {
+        width: 100%;
+        opacity: 50%;
+      }
+      .week-new__info,
+      .week-ongoing__info {
+        flex-direction: column;
+        position: absolute;
+        color: rgb(37, 37, 37);
+        font-size: 25px;
+        font-weight: 700;
+        left: 0;
       }
     </style>
   </head>
@@ -24,14 +40,18 @@
     </div>
     <div class="one-week-challenges">
       <div class="week-new">
-        <img src="sources/turtle.jpg" alt="" />
-        <h2>새로운 챌린지 <span>바다 거북</span> 시작까지</h2>
-        <span>3days 13hours 23seconds</span>
+        <img src="sources/turtle.jpg" />
+        <div class="week-new__info">
+          <h2>새로운 챌린지 <span>바다 거북</span> 시작까지</h2>
+          <span>3days 13hours 23seconds</span>
+        </div>
       </div>
       <div class="week-ongoing">
         <img src="sources/beach.jpg" alt="" />
-        <h2>진행중인 챌린지 DAY + 3</h2>
-        <a href="#">바로가기</a>
+        <div class="week-ongoing__info">
+          <h2>진행중인 챌린지 DAY + 3</h2>
+          <a href="#">바로가기</a>
+        </div>
       </div>
     </div>
     <script
