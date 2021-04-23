@@ -23,11 +23,11 @@
   font-size: 13px;
 }
 
-li:hover {
+.common-sites li:hover {
   background-color: rgba(0, 0, 0, 0.103);
 }
 
-li span {
+.common-sites li span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
