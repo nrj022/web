@@ -1,0 +1,62 @@
+@import "reset.css";
+@import "variables.css";
+
+@import "google-menu.css";
+@import "common-site.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin: 100px 0 0;
+  opacity: 0;
+  animation-name: logo__fadein;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo__fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+.search-box {
+  display: flex;
+  width: 530px;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgb(199, 199, 199);
+  padding: 12px 20px 12px 15px;
+  margin: 35px auto 15px;
+}
+.search-box button {
+  border: none;
+  background-color: transparent;
+}
+.search-box input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.fit-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: dodgerblue;
+  box-shadow: 0 2px 5px rgba(170, 170, 170, 0.945);
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}

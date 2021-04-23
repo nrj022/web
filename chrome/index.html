@@ -4,19 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--    <iron-iconset-svg
-      name="cr"
-      size="24"
-      style="display: none"
-    ></iron-iconset-svg> -->
-    <link rel="stylesheet" href="style.css" />
+    <link id="shorcut-icon" rel="shortcut icon" href="images/chrome-icon.png" />
+    <link rel="stylesheet" href="chrome-style.css" />
+    <style></style>
     <title>새 탭</title>
   </head>
   <body>
     <div class="google-menu">
       <a href="" class="menu gmail">Gmail</a>
       <a href="" class="menu image">이미지</a>
-      <div class="menu menu-dots__hover">
+      <div class="menu menu-dots__bg">
         <div class="menu-dots">
           <div class="dots-top">
             <span class="dot"></span>
@@ -35,23 +32,52 @@
           </div>
         </div>
       </div>
-      <div class="menu profile__hover">
+      <div class="menu profile__bg">
         <span class="profile">늉</span>
+        <div class="user-info">
+          <div class="user-info__account">
+            <span class="profile profile-detail">늉</span>
+            <h4>숭늉</h4>
+            <span>0602smj@gmail.com</span>
+            <span class="user-info__account--manage">Google 계정 관리</span>
+          </div>
+          <ul class="user-info__other-account">
+            <li class="sub-account">
+              <span class="profile">묘진</span>
+              <div class="sub-account__info">
+                <h6>서묘진</h6>
+                <span>nrj022@sookmyung.ac.kr</span>
+              </div>
+            </li>
+            <li class="account-more">
+              <i class="fas fa-user-plus"></i>
+              <span>다른 계정 추가</span>
+            </li>
+          </ul>
+          <button class="user-info__logout-all">모든 계정에서 로그아웃</button>
+          <div class="user-info__others">
+            <span>개인정보 처리 방침 • 서비스 약관</span>
+          </div>
+        </div>
       </div>
     </div>
     <header>
-      <a href="index.html"><img src="google_logo.svg" /></a>
+      <img src="images/google_logo.svg" />
     </header>
     <main>
       <form class="search-box">
         <button><i class="fas fa-search"></i></button>
-        <input type="search" placeholder="Google 검색 또는 URL 입력" />
+        <input
+          class="search-box__input"
+          type="search"
+          placeholder="Google 검색 또는 URL 입력"
+        />
         <i class="fas fa-microphone-alt"></i>
       </form>
-      <ul>
+      <ul class="common-sites">
         <li>
           <div class="site-icon">
-            <img src="naver.png" />
+            <img src="images/naver.png" />
           </div>
           <div class="site-name">
             <span>NAVER</span>
@@ -59,7 +85,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="github.png" />
+            <img src="images/github.png" />
           </div>
           <div class="site-name">
             <span>GitHub</span>
@@ -67,7 +93,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="icons.png" />
+            <img src="images/icons.png" />
           </div>
           <div class="site-name">
             <span>Mic icons</span>
@@ -75,7 +101,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="nomad.png" />
+            <img src="images/nomad.png" />
           </div>
           <div class="site-name">
             <span>노마드 코더 Kokoa Clone</span>
@@ -83,17 +109,17 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="youtube.png" />
+            <img src="images/youtube.png" />
           </div>
           <div class="site-name">
             <span>YouTube</span>
           </div>
         </li>
       </ul>
-      <ul>
+      <ul class="common-sites">
         <li>
           <div class="site-icon">
-            <img src="clone.png" />
+            <img src="images/clone.png" />
           </div>
           <div class="site-name">
             <span>Welcome to Clone</span>
@@ -101,7 +127,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="dictionary.png" />
+            <img src="images/dictionary.png" />
           </div>
           <div class="site-name">
             <span>네이버 영어사전</span>
@@ -109,7 +135,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="bebas.png" />
+            <img src="images/bebas.png" />
           </div>
           <div class="site-name">
             <span>Bebas Neue</span>
@@ -117,7 +143,7 @@
         </li>
         <li>
           <div class="site-icon">
-            <img src="nearwear.png" />
+            <img src="images/nearwear.png" />
           </div>
           <div class="site-name">
             <span>니어웨어</span>
@@ -141,5 +167,6 @@
       src="https://kit.fontawesome.com/041bfb30d2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
