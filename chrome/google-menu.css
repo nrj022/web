@@ -9,12 +9,12 @@
   font-size: 13px;
   visibility: hidden;
   color: rgba(0, 0, 0, 0.87);
-  animation-name: menu__fadein;
+  animation-name: fadein;
   animation-delay: 0.9s;
   animation-fill-mode: forwards;
 }
 
-@keyframes menu__fadein {
+@keyframes fadein {
   100% {
     visibility: visible;
   }
@@ -22,6 +22,41 @@
 
 .menu {
   margin: 8px;
+}
+
+.menu__alert {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  background-color: #54575c;
+  border-radius: 5px;
+  padding: 7px 10px;
+  z-index: 2;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.menu-dots__alert {
+  visibility: hidden;
+  white-space: nowrap;
+  bottom: -30px;
+}
+
+.profile__alert {
+  visibility: hidden;
+  align-items: flex-start;
+  right: -6px;
+  bottom: -60px;
+}
+
+.profile__alert span {
+  color: rgba(255, 255, 255, 0.664);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
 }
 
 .gmail:hover,
@@ -88,6 +123,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  position: relative;
   background-color: transparent;
 }
 
