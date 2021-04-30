@@ -3,6 +3,7 @@
 
 @import "google-menu.css";
 @import "common-site.css";
+@import "click-menu.css";
 
 body {
   display: flex;

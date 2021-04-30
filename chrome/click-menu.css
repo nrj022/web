@@ -1,0 +1,213 @@
+.google-apps,
+.user-info {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  top: 60px;
+  right: 8px;
+  visibility: hidden;
+}
+
+.google-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+  height: 420px;
+  overflow-y: scroll;
+  border-radius: 8px;
+  z-index: 1;
+  padding-left: 5px;
+}
+
+.main-app-menu {
+  border-bottom: var(--border);
+}
+
+.profile-lg {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.google-apps::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 10px;
+}
+
+.google-apps::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 4px solid white;
+  background-color: rgba(92, 92, 92, 0.26);
+}
+table tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table td a,
+.google-apps__blank {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  margin: 15px 6px 0;
+  padding-bottom: 5px;
+}
+
+table td a:hover {
+  background-color: rgba(100, 148, 237, 0.24);
+}
+
+table a span {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  max-width: 75px;
+  word-spacing: -0.5px;
+}
+
+table div {
+  width: 55px;
+  height: 55px;
+  background-size: 100%;
+  background-image: url("images/google-apps.png");
+  margin-bottom: 5px;
+}
+
+.my-business {
+  background-image: url("images/my-business.png");
+  margin: 3px 0 2px;
+}
+
+.user-info {
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.user-info__account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: var(--border);
+}
+
+.user-info__account h4 {
+  margin: 15px 0 5px;
+  font-size: 16px;
+}
+
+.user-info__account--manage {
+  padding: 8px 20px;
+  border: var(--border);
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.user-info__other-account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: var(--border);
+}
+
+.user-info__other-account li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.sub-account {
+  height: 60px;
+}
+
+.sub-account__info {
+  margin-left: 10px;
+}
+
+.sub-account__info h6 {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.sub-account__info span {
+  font-size: 12px;
+}
+
+.basic-button {
+  border: var(--border);
+  background-color: white;
+  margin: 15px;
+  padding: 8px 25px;
+  border-radius: 4px;
+}
+
+.user-info__others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  opacity: 0.8;
+  border-top: var(--border);
+  padding: 14px 0;
+}
+
+.account-more {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-more i {
+  padding: 0 15px 0 8px;
+}
+
+.profile-detail {
+  width: 80px;
+  height: 80px;
+  font-size: 35px;
+  font-weight: 400;
+  position: relative;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50%;
+  bottom: -2px;
+  right: -2px;
+}
+
+.profile-photo i {
+  font-size: 12px;
+  color: rgb(99, 99, 99);
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
