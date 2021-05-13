@@ -1,0 +1,58 @@
+@import "reset.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 100px 0 50px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h2 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 30px;
+}
+
+.login-form button {
+  width: 300px;
+  height: 30px;
+}
+
+.find-account {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in span {
+  margin: 10px 0;
+  color: rgb(119, 119, 119);
+}
+
+.sign-in a {
+  text-decoration: underline;
+}
