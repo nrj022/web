@@ -5,10 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <style>
+      header {
+        width: 100%;
+      }
+
+      header a {
+        margin: 20px;
+        line-height: 40px;
+      }
+
+      .signin-title {
+        margin: 60px 50px;
+      }
+
+      .signin-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .signin-form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .signin-form div span {
+        margin-bottom: 5px;
+      }
+
+      .signin-form div input {
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 0 5px;
+        width: 300px;
+        height: 30px;
+      }
+    </style>
     <title>BASIC COMMUNITY / SIGN IN</title>
   </head>
   <body>
-    <h1>SIGN IN</h1>
-    <form class="sign-in-form"></form>
+    <header><a href="index.html">home</a></header>
+    <h1 class="signin-title">USER INFO</h1>
+    <form class="signin-form">
+      <div>
+        <span>Email</span>
+        <input type="text" />
+        <span>Password</span>
+        <input type="password" />
+        <span>Check Your Password</span>
+        <input type="password" />
+        <span>Username</span>
+        <input type="text" />
+        <span>Date Of Birth</span>
+        <input type="date" />
+      </div>
+      <button type="submit">SIGN IN</button>
+    </form>
   </body>
 </html>
