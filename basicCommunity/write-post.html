@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>BASIC COMMUNITY / NEW POST</title>
+    <style>
+      .write-post_subtitle {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .write-post_subtitle h2 {
+        font-size: 18px;
+        padding-bottom: 5px;
+        margin: -15px 0 10px;
+        color: rgb(139, 139, 139);
+      }
+
+      form {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 10px 0;
+        border-bottom: 1px solid lightgrey;
+      }
+
+      tr td:first-child {
+        width: 20px;
+        padding-right: 20px;
+      }
+
+      td input,
+      textarea {
+        width: 95%;
+      }
+
+      .post-content td {
+        vertical-align: top;
+      }
+
+      .post-content textarea {
+        height: 300px;
+        resize: none;
+      }
+
+      .post-btn button {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="main-board.html"><h1>BASIC COMMUNITY</h1></a>
+    <div class="write-post_subtitle">
+      <h2>New Post</h2>
+    </div>
+    <form>
+      <table>
+        <tr class="category-choose">
+          <td>category</td>
+          <td>
+            <select name="category">
+              <option value="">choose a category</option>
+              <option value="animal">animal</option>
+              <option value="sport">sport</option>
+              <option value="living">living</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="post-title">
+          <td>title</td>
+          <td>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr class="post-content">
+          <td>content</td>
+          <td>
+            <textarea></textarea>
+          </td>
+        </tr>
+      </table>
+      <center class="post-btn"><button type="submit">post</button></center>
+    </form>
+  </body>
+</html>

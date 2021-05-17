@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <style>
-      .main-board__header {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: relative;
-      }
-
       .login-top {
         position: absolute;
-        top: 5px;
-        right: 20px;
+        top: 10px;
+        right: 15px;
         color: lightslategrey;
       }
 
@@ -44,6 +37,10 @@
         padding: 0;
       }
 
+      .menu-category button:hover {
+        text-decoration: underline;
+      }
+
       .menu-category button:first-child {
         font-weight: 700;
       }
@@ -52,6 +49,12 @@
         background-color: white;
         border: 1px solid grey;
         box-shadow: 0 0 5px lightgrey;
+        padding: 4px 5px;
+        font-size: 12px;
+      }
+
+      .menu-write-post:hover {
+        background-color: rgb(240, 240, 240);
       }
 
       .post {
@@ -62,21 +65,32 @@
         border-bottom: 1px solid lightgrey;
       }
 
+      .post-title:hover {
+        text-decoration: underline;
+      }
+
       .post-info {
-        width: 30%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
       }
+
+      .post-info__id {
+        margin-bottom: 5px;
+      }
+
+      .post-info__time {
+        font-size: 10px;
+        color: grey;
+      }
     </style>
     <title>BASIC COMMUNITY / MAIN BOARD</title>
   </head>
   <body class="main-board">
-    <header class="main-board__header">
-      <a class="login-top" href="index.html">login</a>
-      <h1>BASIC COMMUNITY</h1>
-    </header>
+    <a class="login-top" href="login.html">login</a>
+    <a href="main-board.html"><h1>BASIC COMMUNITY</h1></a>
     <div class="container">
       <div class="menu">
         <div class="menu-category">
@@ -85,21 +99,21 @@
           <button>living</button>
         </div>
         <div></div>
-        <button class="menu-write-post">write post</button>
+        <a class="menu-write-post" href="write-post.html">write post</a>
       </div>
       <ul class="post-list">
         <li class="post">
-          <h3>Hi. I'll show you my puppy!</h3>
+          <a class="post-title">Hi. I'll show you my puppy too!</a>
           <div class="post-info">
-            <span>sweetpotato2</span>
-            <span>2021.11.3 12:20pm</span>
+            <span class="post-info__id">sweetpotato2</span>
+            <span class="post-info__time">2021.11.3 12:20pm</span>
           </div>
         </li>
         <li class="post">
-          <h3>I'll show you my dog!</h3>
+          <a class="post-title">I'll show you my dog!</a>
           <div class="post-info">
-            <span>pumkin2</span>
-            <span>2021.11.2 8:00am</span>
+            <span class="post-info__id">pumpkin2</span>
+            <span class="post-info__time">2021.11.2 8:00am</span>
           </div>
         </li>
       </ul>

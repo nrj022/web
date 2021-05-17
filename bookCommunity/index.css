@@ -40,6 +40,41 @@ header .login i {
   align-items: center;
 }
 
+.best-seller__type {
+  display: flex;
+  justify-content: center;
+}
+
+.best-seller__type button {
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid transparent;
+  padding-bottom: 3px;
+}
+
+.best-seller__type button:hover {
+  border-bottom: 1.5px solid black;
+}
+
+.comprehensive-btn {
+  font-weight: 700;
+}
+
+.book-list {
+  position: relative;
+}
+
+.best-seller {
+  position: absolute;
+  top: 0;
+}
+
+.alladdin,
+.yes24 {
+  visibility: hidden;
+}
+
 .best-seller {
   width: 1000px;
   display: flex;
@@ -49,26 +84,18 @@ header .login i {
 }
 
 .ranking {
-  /*   width: 40px;
-  height: 40px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 38px; */
   position: absolute;
   font-weight: 700;
   font-size: 60px;
   color: gold;
-  /* color: white;
-  background-color: rgba(255, 217, 0, 0.705);
-  border-radius: 50%; */
   top: -30px;
   left: -10px;
   z-index: 1;
 }
 
-/* .first-rank {
-    
-} */
+.best-seller__title {
+  text-align: center;
+}
 
 .best-seller__book {
   margin: 10px;
@@ -116,7 +143,6 @@ header .login i {
 }
 
 .best-seller__book--link:hover {
-  /* background-color: rgba(100, 100, 100, 0.493); */
   background-color: rgba(255, 255, 255, 0.692);
 }
 
