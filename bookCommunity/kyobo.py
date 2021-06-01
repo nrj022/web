@@ -29,12 +29,23 @@ bestSellerLi = bestSellerUl.find_all("li")[0:8]
 for  li in bestSellerLi:
     coverSource.append(li.img["src"])
     title.append(li.find("div", class_="title").strong.text)
+    authorDiv = li.find("div", class_="author")
+    while authorDiv.find("span") != None:
+        authorDiv.find("span").replace_with('')
+    print(li.text)
 
-with open("sampleHtml.html", "r+") as f:
+''' with open("sampleHtml.html", "r+") as f:
     data = f.read()
-    soupHomePage = BeautifulSoup(data)
-    print(soupHomePage.li)
-    
+    soupHomePage = BeautifulSoup(data, "html.parser")
+    li = soupHomePage.select_one("li")
+    print(li)
+    content = '<a href="#">Link</a>'
+    li.append(BeautifulSoup(content, 'html.parser'))
+    print(li)
+    print(soupHomePage) '''
+
+
+
 
 ''' with open("sampleHtml.html", "w", encoding="utf8") as file:
     file.write() '''
