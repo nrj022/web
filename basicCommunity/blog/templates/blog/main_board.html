@@ -62,7 +62,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        padding: 10px 0 10px 10px;
         border-bottom: 1px solid lightgrey;
       }
 
@@ -79,6 +79,7 @@
       }
 
       .post-info__id {
+        font-size: 12px;
         margin-bottom: 5px;
       }
 
@@ -102,22 +103,17 @@
         <div></div>
         <a class="menu-write-post" href="write_post.html">write post</a>
       </div>
+      {% for post in posts %}
       <ul class="post-list">
         <li class="post">
-          <a class="post-title">Hi. I'll show you my puppy too!</a>
+          <a class="post-title">{{ post.title }}</a>
           <div class="post-info">
-            <span class="post-info__id">sweetpotato2</span>
-            <span class="post-info__time">2021.11.3 12:20pm</span>
-          </div>
-        </li>
-        <li class="post">
-          <a class="post-title">I'll show you my dog!</a>
-          <div class="post-info">
-            <span class="post-info__id">pumpkin2</span>
-            <span class="post-info__time">2021.11.2 8:00am</span>
+            <span class="post-info__id">{{ post.author }}</span>
+            <span class="post-info__time">{{ post.published_date }}</span>
           </div>
         </li>
       </ul>
+      {% endfor %}
     </div>
   </body>
 </html>
