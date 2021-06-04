@@ -1,0 +1,13 @@
+{% extends 'blog/base.html'%} {% block content %}
+<h1>Basic Community</h1>
+<div class="container">
+  <header>
+    <h2 class="post-detail__title">{{ post.title }}</h2>
+    <div class="post-detail__info">
+      <span class="post-detail__info--author">{{ post.author }}</span>
+      <span class="post-detail__info--date">{{ post.published_date }}</span>
+    </div>
+  </header>
+  <div class="post-detail__text">{{ post.text }}</div>
+</div>
+{% endblock %}

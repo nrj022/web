@@ -1,0 +1,21 @@
+.post-detail__title {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.post-detail__info {
+  color: rgb(78, 78, 78);
+  font-size: 12px;
+}
+
+.post-detail__info--author {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.post-detail__text {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 2px solid lightgray;
+  line-height: 23px;
+}

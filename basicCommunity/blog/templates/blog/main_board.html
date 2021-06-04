@@ -1,119 +1,28 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/index.css'%}" />
-    <style>
-      .login-top {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        color: lightslategrey;
-      }
-
-      .login-top:hover {
-        text-decoration: underline;
-      }
-
-      .container {
-        width: 70%;
-      }
-
-      .menu {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px 0;
-        border-bottom: 2px solid gray;
-      }
-
-      .menu-category button {
-        font-size: 14px;
-        margin-right: 10px;
-        border: transparent;
-        background-color: transparent;
-        padding: 0;
-      }
-
-      .menu-category button:hover {
-        text-decoration: underline;
-      }
-
-      .menu-category button:first-child {
-        font-weight: 700;
-      }
-
-      .menu-write-post {
-        background-color: white;
-        border: 1px solid grey;
-        box-shadow: 0 0 5px lightgrey;
-        padding: 4px 5px;
-        font-size: 12px;
-      }
-
-      .menu-write-post:hover {
-        background-color: rgb(240, 240, 240);
-      }
-
-      .post {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0 10px 10px;
-        border-bottom: 1px solid lightgrey;
-      }
-
-      .post-title:hover {
-        text-decoration: underline;
-      }
-
-      .post-info {
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-      }
-
-      .post-info__id {
-        font-size: 12px;
-        margin-bottom: 5px;
-      }
-
-      .post-info__time {
-        font-size: 10px;
-        color: grey;
-      }
-    </style>
-    <title>BASIC COMMUNITY / MAIN BOARD</title>
-  </head>
-  <body class="main-board">
-    <a class="login-top" href="login.html">login</a>
-    <a href="main_board.html"><h1>BASIC COMMUNITY</h1></a>
-    <div class="container">
-      <div class="menu">
-        <div class="menu-category">
-          <button>animal</button>
-          <button>sport</button>
-          <button>living</button>
-        </div>
-        <div></div>
-        <a class="menu-write-post" href="write_post.html">write post</a>
-      </div>
-      {% for post in posts %}
-      <ul class="post-list">
-        <li class="post">
-          <a class="post-title">{{ post.title }}</a>
-          <div class="post-info">
-            <span class="post-info__id">{{ post.author }}</span>
-            <span class="post-info__time">{{ post.published_date }}</span>
-          </div>
-        </li>
-      </ul>
-      {% endfor %}
+{% extends 'blog/base.html' %} {% block content %}
+<a class="login-top" href="login.html">login</a>
+<a href="main_board.html"><h1>Basic Community</h1></a>
+<div class="container">
+  <div class="menu">
+    <div class="menu-category">
+      <button>animal</button>
+      <button>sport</button>
+      <button>living</button>
     </div>
-  </body>
-</html>
+    <div></div>
+    <a class="menu-write-post" href="write_post.html">write post</a>
+  </div>
+  {% for post in posts %}
+  <ul class="post-list">
+    <li class="post">
+      <a class="post-title" href="{% url 'post_detail' pk=post.pk %}"
+        >{{ post.title }}</a
+      >
+      <div class="post-info">
+        <span class="post-info__id">{{ post.author }}</span>
+        <span class="post-info__time">{{ post.published_date }}</span>
+      </div>
+    </li>
+  </ul>
+  {% endfor %}
+</div>
+{% endblock %}
