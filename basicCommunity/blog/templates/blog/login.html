@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %} {% block content %}
+<a class="home-btn" href="{% url 'main_board' %}">home</a>
+<h1>THIS IS BASIC COMMUNITY FOR PRACTICING JAVASCRIPT</h1>
+<h2 class="login-subtitle">LOGIN</h2>
+<form class="login-form">
+  <input class="info-input" type="email" placeholder="email" />
+  <input class="info-input" type="password" placeholder="password" />
+  <button class="submit-btn" type="submit">LOGIN</button>
+</form>
+<span class="find-account"
+  >FIND <a href="#">USERNAME</a> / <a href="">PASSWORD</a></span
+>
+<div class="sign-in">
+  <span>if you don't have an account,</span>
+  <a href="sign_in.html">sign in</a>
+</div>
+{% endblock %}

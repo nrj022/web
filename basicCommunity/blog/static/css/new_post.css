@@ -1,0 +1,51 @@
+.write-post_subtitle {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.write-post_subtitle h2 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  margin: -15px 0 10px;
+  color: rgb(139, 139, 139);
+}
+
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+tr td:first-child {
+  width: 20px;
+  padding-right: 20px;
+}
+
+td input,
+textarea {
+  width: 95%;
+}
+
+.post-content td {
+  vertical-align: top;
+}
+
+.post-content textarea {
+  height: 300px;
+  resize: none;
+}
+
+.post-btn button {
+  margin: 20px 0;
+}

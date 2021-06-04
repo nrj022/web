@@ -10,3 +10,9 @@ def main_board(request):
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post':post})
+
+def login(request):
+    return render(request, 'blog/login.html')
+
+def new_post(request):
+    return render(request, 'blog/new_post.html')

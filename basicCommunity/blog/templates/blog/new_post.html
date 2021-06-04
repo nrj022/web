@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %} {% block content %}
+<a href="{% url 'main_board' %}"><h1>Basic Community</h1></a>
+<div class="write-post_subtitle">
+  <h2>New Post</h2>
+</div>
+<form>
+  <table>
+    <tr class="category-choose">
+      <td>category</td>
+      <td>
+        <select name="category">
+          <option value="">choose a category</option>
+          <option value="animal">animal</option>
+          <option value="sport">sport</option>
+          <option value="living">living</option>
+        </select>
+      </td>
+    </tr>
+    <tr class="post-title">
+      <td>title</td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr class="post-content">
+      <td>content</td>
+      <td>
+        <textarea></textarea>
+      </td>
+    </tr>
+  </table>
+  <center class="post-btn"><button type="submit">post</button></center>
+</form>
+{% endblock %}

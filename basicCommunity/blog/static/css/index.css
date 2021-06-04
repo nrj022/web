@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "main_board.css";
 @import "post_detail.css";
+@import "new_post.css";
 
 body {
   display: flex;

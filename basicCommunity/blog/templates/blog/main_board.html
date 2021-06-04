@@ -1,6 +1,6 @@
 {% extends 'blog/base.html' %} {% block content %}
-<a class="login-top" href="login.html">login</a>
-<a href="main_board.html"><h1>Basic Community</h1></a>
+<a class="login-top" href="{% url 'login' %}">login</a>
+<a href="{% url 'main_board' %}"><h1>Basic Community</h1></a>
 <div class="container">
   <div class="menu">
     <div class="menu-category">
@@ -9,7 +9,7 @@
       <button>living</button>
     </div>
     <div></div>
-    <a class="menu-write-post" href="write_post.html">write post</a>
+    <a class="menu-write-post" href="{% url 'new_post' %}">new post</a>
   </div>
   {% for post in posts %}
   <ul class="post-list">
