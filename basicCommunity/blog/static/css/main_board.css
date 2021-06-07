@@ -1,5 +1,6 @@
 /* main_board css */
-.login-top {
+
+/* .login-top {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -8,7 +9,7 @@
 
 .login-top:hover {
   text-decoration: underline;
-}
+} */
 
 .container {
   width: 70%;
@@ -21,7 +22,7 @@
   padding: 10px 0;
   border-bottom: 2px solid gray;
 }
-
+/* 
 .menu-category button {
   font-size: 14px;
   margin-right: 10px;
@@ -36,6 +37,28 @@
 
 .menu-category button:first-child {
   font-weight: 700;
+} */
+
+.blog-explanation {
+  margin: -30px 0 40px;
+  font-size: 12px;
+  color: rgb(139, 139, 139);
+}
+
+.menu-title,
+.menu-sub__cate {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.menu-title {
+  padding-left: 10px;
+}
+
+.menu-sub {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .post {
@@ -58,7 +81,7 @@
   align-items: flex-start;
 }
 
-.post-info__id {
+.post-info__cate {
   font-size: 12px;
   margin-bottom: 5px;
 }

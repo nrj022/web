@@ -1,14 +1,20 @@
 {% extends 'blog/base.html' %} {% block content %}
-<a class="login-top" href="{% url 'login' %}">login</a>
+<!-- <a class="login-top" href="{% url 'login' %}">login</a> -->
+<span class="blog-explanation">This is basic blog for practicing Django</span>
 <div class="container">
   <div class="menu">
-    <div class="menu-category">
+    <!-- <div class="menu-category">
       <button>animal</button>
       <button>sport</button>
       <button>living</button>
+    </div> -->
+    <span class="menu-title">Title</span>
+    <div class="menu-sub">
+      <span class="menu-sub__cate">Cate</span>
+      <a class="btn menu-sub__write-post" href="{% url 'new_post' %}"
+        >new post</a
+      >
     </div>
-    <div></div>
-    <a class="btn menu-write-post" href="{% url 'new_post' %}">new post</a>
   </div>
   {% for post in posts %}
   <ul class="post-list">
@@ -17,7 +23,7 @@
         >{{ post.title }}</a
       >
       <div class="post-info">
-        <span class="post-info__id">{{ post.author }}</span>
+        <span class="post-info__cate">{{ post.category }}</span>
         <span class="post-info__time">{{ post.created_date }}</span>
       </div>
     </li>
