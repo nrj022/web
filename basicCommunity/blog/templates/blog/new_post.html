@@ -1,9 +1,20 @@
 {% extends 'blog/base.html' %} {% block content %}
 <a href="{% url 'main_board' %}"><h1>Basic Community</h1></a>
-<div class="write-post_subtitle">
-  <h2>New Post</h2>
+<div class="new-post_subtitle">
+  <h2>Write a New Post</h2>
 </div>
-<form>
+<form action="{% url 'create' %}" method="POST">
+  {% csrf_token %} {% comment %}
+  <tr class="category-choose">
+    <td>category</td>
+    <td>
+      <select name="author">
+        <option value="">choose a author</option>
+        <option value="nrj022">nrj022</option>
+      </select>
+    </td>
+  </tr>
+  {% endcomment %}
   <table>
     <tr class="category-choose">
       <td>category</td>
@@ -16,19 +27,19 @@
         </select>
       </td>
     </tr>
-    <tr class="post-title">
+    <tr class="new-post__title">
       <td>title</td>
       <td>
-        <input type="text" />
+        <input type="text" name="title" />
       </td>
     </tr>
-    <tr class="post-content">
+    <tr class="new-post__content">
       <td>content</td>
       <td>
-        <textarea></textarea>
+        <textarea name="body"></textarea>
       </td>
     </tr>
   </table>
-  <center class="post-btn"><button type="submit">post</button></center>
+  <center class="new-post__btn"><button type="submit">post</button></center>
 </form>
 {% endblock %}

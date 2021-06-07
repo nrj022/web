@@ -1,13 +1,13 @@
-.write-post_subtitle {
+.new-post_subtitle {
   width: 70%;
   display: flex;
   justify-content: flex-start;
 }
 
-.write-post_subtitle h2 {
+.new-post_subtitle h2 {
   font-size: 18px;
   padding-bottom: 5px;
-  margin: -15px 0 10px;
+  margin: -30px 0 10px;
   color: rgb(139, 139, 139);
 }
 
@@ -37,15 +37,15 @@ textarea {
   width: 95%;
 }
 
-.post-content td {
+.new-post__content td {
   vertical-align: top;
 }
 
-.post-content textarea {
+.new-post__content textarea {
   height: 300px;
   resize: none;
 }
 
-.post-btn button {
+.new-post__btn button {
   margin: 20px 0;
 }

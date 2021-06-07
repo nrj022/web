@@ -1,10 +1,10 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .models import Post
 
 # Create your views here.
 def main_board(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    posts = Post.objects.filter(created_date__lte=timezone.now()).order_by('created_date')
     return render(request, 'blog/main_board.html', {'posts': posts})
 
 def post_detail(request, pk):
@@ -16,3 +16,13 @@ def login(request):
 
 def new_post(request):
     return render(request, 'blog/new_post.html')
+
+def create(request):
+    if(request.method == 'POST'):
+        post = Post()
+        post.category = request.POST['category']
+        post.author = request.user
+        post.title = request.POST['title']
+        post.text = request.POST['body']
+        post.save()
+    return redirect('main_board')
