@@ -32,4 +32,4 @@ def remove_post(request, pk):
     if request.method == 'POST':
         post.delete()
         return redirect('main_board')
-    return render(request, 'blog/remove_post.html', {'Post':post})
+    return render(request, 'blog/remove_post.html', {'post':post})

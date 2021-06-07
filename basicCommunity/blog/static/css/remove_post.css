@@ -1,0 +1,19 @@
+.delete-checkform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+  border: 1px solid grey;
+}
+
+.delete-checkmessage {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+
+.delete-yes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}

@@ -2,6 +2,19 @@
 @import "main_board.css";
 @import "post_detail.css";
 @import "new_post.css";
+@import "remove_post.css";
+
+.btn {
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 0 0 5px lightgrey;
+  padding: 4px 5px;
+  font-size: 12px;
+}
+
+.btn:hover {
+  background-color: rgb(240, 240, 240);
+}
 
 body {
   display: flex;
@@ -26,6 +39,12 @@ h1 {
   margin: 100px 0 50px;
   font-weight: 700;
   font-size: 20px;
+}
+
+.blog-explanation {
+  margin: -30px 0 20px;
+  font-size: 12px;
+  color: rgb(139, 139, 139);
 }
 
 .login-subtitle {

@@ -38,18 +38,6 @@
   font-weight: 700;
 }
 
-.btn {
-  background-color: white;
-  border: 1px solid grey;
-  box-shadow: 0 0 5px lightgrey;
-  padding: 4px 5px;
-  font-size: 12px;
-}
-
-.btn:hover {
-  background-color: rgb(240, 240, 240);
-}
-
 .post {
   display: flex;
   justify-content: space-between;
