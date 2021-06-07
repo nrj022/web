@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 class Post(models.Model):
-    category = models.CharField(max_length=50)
+    category = models.CharField(max_length=50, default = "coding")
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
