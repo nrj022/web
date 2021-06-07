@@ -10,4 +10,7 @@
   </header>
   <div class="post-detail__text">{{ post.text }}</div>
 </div>
+<div class="btn-more">
+  <a class="btn delete" href="{% url 'remove_post' pk=post.pk %}">delete</a>
+</div>
 {% endblock %}

@@ -38,7 +38,7 @@
   font-weight: 700;
 }
 
-.menu-write-post {
+.btn {
   background-color: white;
   border: 1px solid grey;
   box-shadow: 0 0 5px lightgrey;
@@ -46,7 +46,7 @@
   font-size: 12px;
 }
 
-.menu-write-post:hover {
+.btn:hover {
   background-color: rgb(240, 240, 240);
 }
 

@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %} {% block content%}
+<form method="POST">
+  {% csrf_token %}
+  <h1>Basic Blog</h1>
+  <span>{{ Post.postname }} - 삭제하기</span>
+  <button>delete</button>
+</form>
+{% endblock %}

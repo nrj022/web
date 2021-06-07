@@ -26,3 +26,10 @@ def create(request):
         post.text = request.POST['body']
         post.save()
     return redirect('main_board')
+
+def remove_post(request, pk):
+    post = Post.objects.get(pk=pk)
+    if request.method == 'POST':
+        post.delete()
+        return redirect('main_board')
+    return render(request, 'blog/remove_post.html', {'Post':post})
